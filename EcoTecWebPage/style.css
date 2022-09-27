@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-color: #32b768;
+}
+.greenwaveImg {
+  width: 950px;
+  height: 600px;
+  position: absolute;
+  right: 0px;
+}
+.appImg {
+  width: 525px;
+  height: 562px;
+  position: absolute;
+  right: 40px;
+  bottom: 60px;
+}
+.nameApp {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700 bold;
+  font-size: 64px;
+  color: #ffffff;
+}
+.lampImg {
+  width: 75px;
+  height: 76px;
+}
+.descriptionApp {
+  position: absolute;
+  top: 198px;
+  left: 162px;
+  padding-left: 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+}
+.firstDiv {
+  position: absolute;
+  top: 113px;
+  left: 215px;
+  display: flex;
+  flex-direction: row;
+}
+.instructionApp {
+  width: 417px;
+  height: 51px;
+  position: absolute;
+  top: 323px;
+  left: 157px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+.platformAvaiable {
+  width: 250px;
+  height: 153px;
+  position: absolute;
+  top: 400px;
+  left: 240px;
+}
+.mainContent {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.contentSection {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.card {
+  background-color: #f0f0f5;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  width: 432px;
+  height: 320px;
+  padding: 15px;
+}
+.cardImage {
+  width: 100%;
+  height: 170px;
+}
+.item1 {
+  width: 100%;
+  padding-right: -1px;
+}
+.item2 {
+  width: 100%;
+  padding-right: 15px;
+}
+.cardTitle {
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: #207342;
+  margin-top: 5px;
+  padding-left: 20px;
+}
+.cardDescription {
+  width: 380px;
+  height: 90px;
+  font-weight: 400;
+  line-height: 17.58px;
+  display: flex;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  margin-top: 5px;
+  padding-left: 20px;
+  letter-spacing: 0.2px;
+}
+footer {
+  width: 100%;
+  height: 44px;
+  margin-top: 40px;
+  background-color: #f0f0f5;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 16.41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
