@@ -3,121 +3,134 @@
   padding: 0;
   box-sizing: border-box;
 }
-.header {
-  position: relative;
+header {
   width: 100%;
+  background-color: #289253;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.left-column {
+  width: 50%;
+  min-width: 280px;
   height: 600px;
-  background-color: #32b768;
-}
-.greenwaveImg {
-  width: 950px;
-  height: 600px;
-  position: absolute;
-  right: 0px;
-}
-.appImg {
-  width: 525px;
-  height: 562px;
-  position: absolute;
-  right: 40px;
-  bottom: 60px;
-}
-.nameApp {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700 bold;
-  font-size: 64px;
-  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  row-gap: 120px;
+  justify-content: center;
+  align-items: center;
 }
 .lampImg {
   width: 75px;
   height: 76px;
+  margin-right: 10px;
 }
-.descriptionApp {
-  position: absolute;
-  top: 198px;
-  left: 162px;
-  padding-left: 30px;
+.title {
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-weight: 700 bold;
+  font-size: 3.8em;
   color: #ffffff;
 }
-.firstDiv {
-  position: absolute;
-  top: 113px;
-  left: 215px;
-  display: flex;
-  flex-direction: row;
-}
-.instructionApp {
-  width: 417px;
-  height: 51px;
-  position: absolute;
-  top: 323px;
-  left: 157px;
+.subtitle {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   color: #ffffff;
   text-align: center;
 }
-.platformAvaiable {
-  width: 250px;
-  height: 153px;
-  position: absolute;
-  top: 400px;
-  left: 240px;
-}
-.mainContent {
-  margin-top: 30px;
+.lampNtitle {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
 }
-.contentSection {
-  display: grid;
-  gap: 30px;
-  grid-template-columns: 1fr 1fr 1fr;
+.lampNtitleNsubtitle {
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.9375rem;
+  /* 0.9375rem = 15px */
+}
+.instructionApp {
+  max-width: 425px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+.platformImg {
+  width: 193px;
+  height: 61px;
+}
+.instructionNplatformImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5px;
+}
+.right-column {
+  width: 50%;
+  min-width: 280px;
+  height: 37.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 6%;
+  background-image: url("./images/greenwave.png");
+  background-position: right;
+}
+.appImg {
+  max-width: 432px;
+  min-width: 280px;
+  width: 70%;
+}
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 25px;
 }
 .card {
   background-color: #f0f0f5;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  width: 432px;
-  height: 320px;
+  min-width: 260px;
+  max-width: 432px;
+  display: flex;
+  flex-direction: column;
   padding: 15px;
+  margin: 10px;
 }
-.cardImage {
+.cardImg {
   width: 100%;
-  height: 170px;
-}
-.item1 {
-  width: 100%;
-  padding-right: -1px;
-}
-.item2 {
-  width: 100%;
-  padding-right: 15px;
+  height: 45%;
 }
 .cardTitle {
-  display: flex;
-  justify-content: flex-start;
   font-family: "Roboto", sans-serif;
+  text-align: center;
   font-weight: bold;
   color: #207342;
   margin-top: 5px;
-  padding-left: 20px;
 }
 .cardDescription {
-  width: 380px;
-  height: 90px;
+  width: 100%;
   font-weight: 400;
   line-height: 17.58px;
-  display: flex;
   text-align: justify;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   margin-top: 5px;
-  padding-left: 20px;
   letter-spacing: 0.2px;
 }
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
   width: 100%;
   height: 44px;
   margin-top: 40px;
@@ -125,7 +138,34 @@ footer {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 16.41px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+@media (max-width: 680px) {
+  header {
+    flex-direction: column;
+  }
+  .left-column {
+    gap: 70px;
+    margin-top: 50px;
+    height: 400px;
+  }
+  .right-column {
+    padding-right: 0;
+    align-items: center;
+    height: 400px;
+    margin-top: 50px;
+  }
+  .lampNtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .lampImg {
+    margin-right: 0;
+  }
+}
+@media (max-width: 1325px) {
+  .right-column {
+    background-image: none;
+  }
 }
